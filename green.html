@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoShift</title>
+  <link rel="icon" href="leaf.png" type="image/png" />
+  <link rel="stylesheet" href="green.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <div class="logo">🌿 <span>EcoShift</span></div>
+    
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#" data-tab="home">Home</a></li>
+            <li><a href="green.html" >Green Positive</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" data-tab="deepwoods">Deepwoods Trust</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="toggleTheme" />
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-text">🌞 / 🌙</span>
+      </div>
+
+  <div class="section">
+    <h2>Campaign Highlights</h2>
+    <div class="highlight-boxes">
+      <div class="highlight">
+        <h3>35% Emission Cut</h3>
+        <p>Thanks to EV autos, CO₂ output is reducing steadily.</p>
+      </div>
+      <div class="highlight">
+        <h3>12,000+ EV Autos</h3>
+        <p>Already on the road helping reduce air pollution.</p>
+      </div>
+      <div class="highlight">
+        <h3>100+ Supporters</h3>
+        <p>Organizations backing the cause for clean air.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="green_campaign_brochure.pdf" class="btn" download>Download Campaign Brochure</a>
+    </div>
+
+    <h2>What’s This All About?</h2>
+    <p>
+      We’re on a mission to fight pollution and encourage sustainable mobility in Bengaluru.
+      This campaign supports the adoption of electric vehicles (EVs) and educates commuters
+      about how small choices create big impact.
+    </p>
+
+    <div class="quiz">
+      <h3>Quick Quiz</h3>
+      <p>How much CO₂ does an EV auto save per km compared to petrol?</p>
+      <select id="quizSelect">
+        <option value="">Choose an answer</option>
+        <option value="wrong">50g</option>
+        <option value="correct">90g</option>
+        <option value="wrong">30g</option>
+      </select>
+      <p id="quizResult" style="margin-top:10px; font-weight: bold;"></p>
+    </div>
+
+    <h2>Real Voices</h2>
+    <div class="testimonial">“Driving an EV has reduced my fuel costs and helped the environment.” – Auto Driver, Whitefield</div>
+    <div class="testimonial">“I always choose EVs now. Cleaner air is everyone’s right!” – Priya S., Commuter</div>
+
+    <div class="cta">
+      <button class="btn" onclick="alert('Thank you for supporting Green Positive!')">Take the Pledge</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>EcoShift</h3>
+      <p>"Drive Change, Breathe Green"</p>
+      <p>&copy; 2025 EcoShift.com | Contact us at:
+        <a href="mailto:ecoshift@gmail.com">ecoshift@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+<script src="green.js"></script>
+</html>

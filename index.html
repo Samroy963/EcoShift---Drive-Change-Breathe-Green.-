@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoShift</title>
+  <link rel="icon" href="leaf.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌿 <span>EcoShift</span></div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" data-tab="home">Home</a></li>
+        <li><a href="green.html" >Green Positive</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#" data-tab="deepwoods">Deepwoods Trust</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <div id="home" class="tab-content active">
+      <h1 style="text-align: center;">Welcome to EcoShift! Let's transition to a <span
+          style="color:green">greener</span> world together. 🌍</h1>
+    </div>
+
+    <div id="positive" class="tab-content">
+      <p style="text-align: center;">Explore the positive impact of electric vehicles on biodiversity. ⚡🌳</p>
+    </div>
+
+    <div id="deepwoods" class="tab-content">
+      <iframe src="https://greenpositive.org" width="100%" height="600px" style="border: none;"></iframe>
+    </div>
+  </main>
+
+
+  <section class="welcome">
+    <p>EcoShift is an initiative to promote eco-friendly transportation across Bengaluru.
+      By choosing electric autos and cabs, you're reducing carbon emissions, improving air quality,
+      and contributing to a sustainable future.</p>
+  </section>
+
+
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="toggleTheme" />
+      <span class="slider round"></span>
+    </label>
+    <span class="toggle-text">🌞 / 🌙</span>
+  </div>
+
+
+  <section class="calculator">
+    <h2>Carbon Savings Calculator</h2>
+    <label for="distance">Enter Distance (in km):</label><br />
+    <input type="number" id="distance" placeholder="e.g., 10" oninput="liveCalculate()" />
+    <p id="calc-result"></p>
+  </section>
+
+
+  <footer>
+    <div class="footer-content">
+      <h3>EcoShift</h3>
+      <p>"Drive Change, Breathe Green"</p>
+      <p>&copy; 2025 EcoShift.com | Contact us at:
+        <a href="mailto:ecoshift@gmail.com">ecoshift@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

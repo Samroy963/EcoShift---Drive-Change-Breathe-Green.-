@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - EcoShift</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" href="leaf.png" type="image/png" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌿 <span>EcoShift</span></div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#positive">Green Positive</a></li>
+        <li><a href="index.html#contactus">Contact Us</a></li>
+        <li><a href="index.html#deepwoods">Deepwoods Trust</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="toggleTheme" />
+      <span class="slider round"></span>
+    </label>
+    <span class="toggle-text">🌞 / 🌙</span>
+  </div>
+
+  <main class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you soon 🌱</p>
+
+    <form class="contact-form">
+      <div class="form-row">
+        <input type="text" placeholder="First Name" required />
+        <input type="text" placeholder="Last Name" required />
+      </div>
+
+      <div class="form-row">
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+      </div>
+
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Type your message here..." rows="5" required></textarea>
+
+      <button type="submit" onclick="Clicky()">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoShift.com | <a href="mailto:ecoshift@gmail.com">ecoshift@gmail.com</a></p>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>
